@@ -1,0 +1,142 @@
+/*! main.css | (c) 2024 Mark Battistella | github.com/markbattistella */
+
+/* Variables */
+:root {
+	--size-font: 18px;
+	--size-radius: 0.5em;
+	--font-serif: ui-serif, "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif;
+	--font-monospace: ui-monospace, SFMono-Regular, Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+	--colour-red: 349, 82%;
+	--colour-yellow: 41, 93%;
+	--colour-green: 121, 54%;
+	--colour-blue: 203, 70%;
+	--colour-purple: 265, 57%;
+	--colour-orange: 24, 95%;
+	--colour-brown: 24, 49%;
+	--colour-pink: 337, 79%;
+	--colour-pale: 211, 19%;
+	--colour-mono: 0, 0%;
+}
+
+/* Resets */
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+/* Normalise */
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-user-select: none;
+
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	--mono: 0%;
+	color: hsla(var(--colour-mono), var(--mono), 0.8);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	border-radius: 0;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	--mono: 60%;
+	margin: 0;
+	padding: 2em;
+	height: 100vh;
+	width: 100vw;
+	border-radius: var(--mb-border-radius);
+	font-family: var(--font-sans);
+	font-size: var(--size-font);
+	line-height: calc(var(--size-font) * 1.8);
+	font-weight: 300;
+	color: hsla(var(--colour-mono), 100%, 0.9);
+	touch-action: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+cite,
+iframe {
+	display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio,
+canvas,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+[disabled=disabled],
+[disabled] {
+	cursor: not-allowed;
+}
+
+a,
+.button {
+	text-decoration: none;
+	background: none;
+}
+
+a,
+a:hover,
+a:visited {
+	--mono: 5%;
+	color: hsl(var(--colour-mono), var(--mono));
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: bold;
+	position: relative;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { border: 0; }

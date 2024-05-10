@@ -1,0 +1,120 @@
+/* CUSTOMISATIONS */
+body {
+    --mono: 15%;
+    background: hsl(var(--colour-blue), var(--mono));
+}
+
+.primary {
+	text-align: center;
+    max-width: 80%;
+}
+
+.primary.full-width {
+    max-width: 100%;
+}
+
+header.primary h1 {
+	font-size: 1.4em;
+	margin: 0;
+	padding: 0;
+}
+
+footer.primary {
+	color: hsla(var(--colour-pale), 100%, 0.8);
+	position: fixed;
+	bottom: 0;
+	font-size: 0.5em;
+	padding: 0.5em 2em;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+#progress-bar {
+	background: hsla(var(--colour-pale), 100%, 0.3);
+	border-radius: var(--size-radius);
+	height: 0.7em;
+	margin: 2em 1em;
+}
+
+#total-progress {
+	border-radius: var(--size-radius);
+	background: hsl(var(--colour-pale), 100%);
+	width: 0;
+	height: 100%;
+	transition: width 1s;
+}
+
+
+
+
+.grid {
+	display: grid;
+    color: hsl(var(--colour-pale), 100%);
+    text-align: center;
+
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.grid div {
+	opacity: 0.3;
+    line-height: 2.2rem;
+    font-size: 80%;
+}
+
+.grid div.active,
+.grid div.completed {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.grid .active {
+    font-size: 100%;
+}
+
+.grid div.completed {
+    color: hsl(var(--colour-green), 50%);
+}
+
+
+
+
+
+
+
+
+.state.hidden {
+    display: none !important;
+}
+.state.visible {
+    display: block ;
+}
+
+
+.state.pending {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+body.onHover {
+    --mono: 20%;
+}
+
+body.onProcess {
+    --mono: 20%;
+    background: hsl(var(--colour-green), var(--mono));
+}
+
+body.onError {
+    --mono: 40%;
+    background: hsl(var(--colour-red), var(--mono));
+}

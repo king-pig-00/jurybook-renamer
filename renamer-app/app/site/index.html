@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+
+  <title>Jury Book Renamer</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+  <div class="state pending visible">
+    <header class="primary">
+      <h1>Drop your Jury Book archive ZIP file here</h1>
+    </header>
+  </div>
+
+  <div class="state processing hidden">
+    <header class="primary full-width">
+      <h1>Processing Jury Book Archive</h1>
+    </header>
+
+    <div id="progress-bar">
+      <div id="total-progress"></div>
+    </div>
+
+    <div class="grid">
+
+      <div id="process-item-1" class="grid-line">
+        <span>Extracting Jury Book archive ZIP file</span>
+      </div>
+
+      <div id="process-item-2" class="grid-line">
+        <span>Reading all <code>contents.json</code> files</span>
+      </div>
+
+      <div id="process-item-3" class="grid-line">
+        <span>Building rename table</span>
+      </div>
+
+      <div id="process-item-4" class="grid-line">
+        <span>Renaming files and folder names</span>
+      </div>
+
+      <div id="process-item-5" class="grid-line">
+        <span>Compiling the new Jury Book archive</span>
+      </div>
+
+      <div id="process-item-6" class="grid-line">
+        <span>Zipping up the renamed archive file</span>
+      </div>
+
+      <div id="process-item-7" class="grid-line">
+        <span>Completed renaming</span>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="primary full-width"></footer>
+  <script src="../modules/renderer.js"></script>
+</body>
+
+</html>

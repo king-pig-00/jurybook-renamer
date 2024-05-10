@@ -1,0 +1,46 @@
+{
+  "name": "opp-jurybook-renamer",
+  "version": "1.0.0",
+  "description": "Renamer for Jury Book archived ZIP files into their renamed names from the web portal",
+  "private": true,
+  "homepage": "https://markbattistella.com",
+  "bugs": {
+    "url": "https://github.com/markbattistella/jurybook-renamer-electron/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markbattistella/jurybook-renamer-electron"
+  },
+  "author": {
+    "name": "Mark Battistella"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always"
+  },
+  "funding": [
+    {
+      "type": "Coffee",
+      "url": "https://www.paypal.me/markbattistella/5AUD"
+    },
+    {
+      "type": "Pizza",
+      "url": "https://www.paypal.me/markbattistella/10AUD"
+    },
+    {
+      "type": "Dinner",
+      "url": "https://www.paypal.me/markbattistella/20AUD"
+    }
+  ],
+  "main": "app/index.js",
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.12.0",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.8",
+    "fs-extra": "^11.2.0"
+  }
+}
