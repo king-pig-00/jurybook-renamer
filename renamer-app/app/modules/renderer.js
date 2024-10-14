@@ -4,7 +4,7 @@
 
 
 const footer = document.querySelector('footer');
-footer.innerHTML = 'Mark Battistella &copy; 2013-' + new Date().getFullYear();
+footer.innerHTML = '&copy; 2013-' + new Date().getFullYear();
 
 let isInside = false;
 
